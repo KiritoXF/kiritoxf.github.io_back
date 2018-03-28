@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.6" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/kirito.ico?v=6.0.6">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/kirito.ico?v=6.0.6">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/kirito.ico?v=6.0.6">
+
+
+  <link rel="mask-icon" href="/kirito.ico?v=6.0.6" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.0.6',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="闲茶杂文的更新日志
+
+1.8.02018年3月28日-更新Next到6.*版本-将评论功能替换为 Valine-增加鼠标点击的love特效-将文章底部的标签图标由 # 更改为自定义-在网站底部显示访客数，按uv统计，但数字似乎不太对？-在网站侧栏增加我的简历
+1.7.12017年5月21日-将评论功能替换为 disqus-增加侧边栏分享按钮
+v1.7.02017年5月20日-增加打赏功能-增加版">
+<meta property="og:type" content="website">
+<meta property="og:title" content="更新日志">
+<meta property="og:url" content="kiritoxf.github.io/log/index.html">
+<meta property="og:site_name" content="闲茶杂文">
+<meta property="og:description" content="闲茶杂文的更新日志
+
+1.8.02018年3月28日-更新Next到6.*版本-将评论功能替换为 Valine-增加鼠标点击的love特效-将文章底部的标签图标由 # 更改为自定义-在网站底部显示访客数，按uv统计，但数字似乎不太对？-在网站侧栏增加我的简历
+1.7.12017年5月21日-将评论功能替换为 disqus-增加侧边栏分享按钮
+v1.7.02017年5月20日-增加打赏功能-增加版">
+<meta property="og:updated_time" content="2018-03-28T04:30:27.389Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="更新日志">
+<meta name="twitter:description" content="闲茶杂文的更新日志
+
+1.8.02018年3月28日-更新Next到6.*版本-将评论功能替换为 Valine-增加鼠标点击的love特效-将文章底部的标签图标由 # 更改为自定义-在网站底部显示访客数，按uv统计，但数字似乎不太对？-在网站侧栏增加我的简历
+1.7.12017年5月21日-将评论功能替换为 disqus-增加侧边栏分享按钮
+v1.7.02017年5月20日-增加打赏功能-增加版">
+
+
+
+
+
+
+  <link rel="canonical" href="kiritoxf.github.io/log/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>更新日志 | 闲茶杂文</title>
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?2e3e6c277b52e9fbd211b7112caa6541";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> 
+
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">闲茶杂文</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">分享文字与心情</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+          
+  <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-commonweal">
+    <a href="/404/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />公益 404</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-log">
+    <a href="/log" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-book"></i> <br />更新日志</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-about">
+    <a href="/about/startbootstrap/index.html" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-adventure">
+    <a href="/test/index.html" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-bicycle"></i> <br />新的探索</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-resume">
+    <a href="http://kiritoxf.coding.me/deerCV-kiritoxf" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-sticky-note"></i> <br />我的简历</a>
+</li>
+
+      
+
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+<h2 class="post-title" itemprop="name headline">更新日志</h2>
+
+<div class="post-meta">
+  
+  
+
+
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <blockquote>
+<p><code>闲茶杂文</code>的更新日志</p>
+</blockquote>
+<p>1.8.0<br>2018年3月28日<br>-更新Next到6.*版本<br>-将评论功能替换为 Valine<br>-增加鼠标点击的love特效<br>-将文章底部的标签图标由 # 更改为自定义<br>-在网站底部显示访客数，按uv统计，但数字似乎不太对？<br>-在网站侧栏增加我的简历</p>
+<p>1.7.1<br>2017年5月21日<br>-将评论功能替换为 disqus<br>-增加侧边栏分享按钮</p>
+<p>v1.7.0<br>2017年5月20日<br>-增加打赏功能<br>-增加版权说明功能<br>-增加友情链接<br>-开启了背景动画</p>
+<p>v1.6.0<br>2017年3月25日<br>-全面升级博客页面，暂时未deploy<br>-现在可以通过kirito.space访问我的 主页了</p>
+<p>v1.5.0<br>2017年3月24日<br>-about页面更名为home，成为临时主页<br>-修复了代码敲一半死机蓝屏等问题<br>-为临时主页增加了关于和更新日志界面</p>
+<p>v 1.4.3<br>2017年3月22日<br>-遇到并解决了一些玄妙的问题<br>-尝试引入 amazeUI 框架<br>-调整 menu 布局<br>-修改了更新日志中的版本号</p>
+<p>v 1.4.2<br>2017年3月21日<br>-修复了一些 bug （其实忘了是什么了）<br>-关于页面引入 bootstrap 框架</p>
+<p>v 1.4.1<br>2017年3月21日<br>-关于页面升级为 html 格式（内容尚未更新）</p>
+<p>v 1.4<br>2017年3月20日<br>-增加了百度分析功能，代码添加成功<br>-增加wechat的赞助，但是还没放图片…<br>-修复 menu 处‘更新日志’的错误显示（我终于找到language了- - ）<br>-增加 404 公益页面</p>
+<p>v 1.3<br>2017年2月28日<br>-将更新日志移到menu处<br>-<code>小帆的博客</code> 更名为 <code>闲茶杂文</code></p>
+<p>v 1.2<br>2017年2月27日<br>-新增categories和tags页面，为博文添加了分类和标签</p>
+<p>v 1.1<br>2017年2月26日</p>
+<p>-切换主题为<strong>NexT.Pisces</strong><br>-新增网站缩略图<br>-新增多说功能，可以评论啦<br>-增加了social bar<br>-主页博文增加缩略功能<br>-图片采用<a href="http://www.qiniu.com/" target="_blank" rel="external">七牛云</a>存储<br>-新增网易云音乐外链播放器，可以听音乐啦</p>
+<p>v 1.0<br>2017年2月24日</p>
+<p>-参照教程成功建成了<code>小帆的博客</code><br>-发布了第一篇博文 firsthexo （今后应该会删除）</p>
+<hr>
+<p> 本作品采用 <a href="http://creativecommons.org/licenses/by/2.5/cn/" target="_blank" rel="external">知识共享署名 2.5 中国大陆许可协议</a> 进行许可，转载请注明来自 <a href="kirito.space">闲茶杂文</a>，并保持转载后文章内容的完整。本人保留所有版权相关权利。</p>
+<p>本文链接：kiritoxf.github.io/log/index.html</p>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+
+
+
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="http://olzajftib.bkt.clouddn.com/Kirito.jpg"
+                alt="小帆" />
+            
+              <p class="site-author-name" itemprop="name">小帆</p>
+              <p class="site-description motion-element" itemprop="description">满袖尘埃推不去</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/KiritoXF" target="_blank" title="GitHub" rel="external nofollow"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://weibo.com/2276900965/" target="_blank" title="Weibo" rel="external nofollow"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://space.bilibili.com/4757407/#!/" target="_blank" title="bilibili" rel="external nofollow"><i class="fa fa-fw fa-tv"></i>bilibili</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://7ma.github.io//" title="7ma" target="_blank">7ma</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate"> 
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小帆</span>
+
+  <div class="powered-by">
+  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+  </span>
+  </div>
+  
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.0.6</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.6"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.6"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.6"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.6"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.6"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.6"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.6"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'WVnllTcLXJQkhllmLCrgb7HK-gzGzoHsz',
+        appKey: 'QHUvLKJQ7a6GvXwOmA2Iyg1h',
+        placeholder: '发表你的评论',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/loveClick.js"></script>
+  <script type="text/javascript" src="/live2d/script"></script><script type="text/javascript">live2dStart(undefined,"/live2d/z16/z16.model.json");</script>
+</body>
+</html>

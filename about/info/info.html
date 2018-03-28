@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>闲茶杂文-关于界面</title>
+    <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<style>
+    .panel {
+        background-image: -webkit-linear-gradient(#FFF46E, #FFAF44);
+        opacity: 0.8;
+    }
+    
+    .container-fluid {
+        top: 200px;
+        max-height: 500px;
+    }
+    
+    body {
+        padding: 50px;
+        font-family: sans-serif;
+        background: url(../assets/images/bilibili.png) center top 5% no-repeat;
+    }
+    
+    .navbar {
+        opacity: 0.8;
+        background: rgba(x, x, x, 0.3);
+    }
+
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!--  <img src="images/love.png" class="img-responsive img-rounded" alt="Responsive img"> -->
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://kirito.space">闲茶杂文</a>
+                <a class="navbar-brand" href="../startbootstrap/index.html">临时主页</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-coffee" aria-hidden="ture"></i>闲茶
+                    <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">锦年呓语</a></li>
+                            <li><a href="#">午后茶</a></li>
+                            <li><a href="#">杂谈</a></li>
+                            <li><a href="#">随感</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-newspaper-o" aria-hidden="true"></i>杂文<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Java学习</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Markdown笔记</a></li>
+                            <li><a href="#">前端相关</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>关于</a></li>
+                    <li><a href="../log/log.html"><i class="fa fa-book" aria-hidden="false"></i>更新日志</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row">
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center bg-primary">关于</h3>
+                </div>
+                <div class="panel-body"></div>
+
+
+                <!-- 
+        这是原来的‘关于’界面的内容，暂且先保存在这里，不要删去
+    -->
+                <p class="text-center">
+                    你好，这里是我的博客-闲茶杂文。目前已经基本搭建完成，但我还在不断尝试新的事物，不断的修改错误和增加有趣的东西。<br> 一日，小帆偶然的打开了
+                    <a href="http://www.qlcoder.com">千里码</a>，偶然的做起了<strong> Markdown </strong>这一关，完成后，又十分巧合的点开了hexo，竟耐住性子，按着步骤一步步搭了起来。这就是这个博客最初的故事。<br> 嗯…刚开始感觉其实也并没有做什么，也就是修改配置文件。
+                    <br /> 这是一个挺有趣的领域，慢慢接触，慢慢的发现另一个世界。
+                    <br /> 等等……Markdown本身有是一个大坑啊！想想
+                    <a href="http://markdown.xiaoshujiang.com/">小书匠</a>给我带来的感受吧……Markdown只是一个基础，一个任人展示，发挥才能的平台，在这上面又涌现出许多拓展……<br /> 说起来也快一个月了呢。一个月前的我是那么想的。
+                    <br /> 但是现在再一看，就有了新的感受了。因为不知怎么，我的技能点点得越来越歪了，最近看起了JavaScript、HTML之类的，于是就想着自己写个页面放在这上面。这个关于页面也算是又一个新世界的数据测试了。
+                    <br /> (关于界面持续更新中-2017.3.21)
+                    <br />
+
+                </p>
+                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+                <!-- Include all compiled plugins (below), or include individual files as needed -->
+                <script src="js/bootstrap.min.js"></script>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center bg-info">另一个关于</h3>
+                </div>
+                <div class="panel-body">
+
+                </div>
+                <p class="text-left">
+                    今天把左面的关于加了透明度，遇到了各种各样的玄学问题，brackets 真的好用啊！可惜这工作区的问题到底还是解决不了，workspaces 插件的作者还有点坑…… 不过其它的一些插件好帅，尤其是 beautify，完美解决了我的格式化问题。 打算再接触 AmazeUI 框架，把它放到 adventure 页面。 好多事情要做！ 2017年3月22日
+                </p>
+
+            </div>
+        </div>
+
+</body>
+
+</html>
