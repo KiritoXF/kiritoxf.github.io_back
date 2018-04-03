@@ -347,6 +347,171 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="kiritoxf.github.io/2018/04/03/IDEA下svn常用操作/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小帆">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://olzajftib.bkt.clouddn.com/Kirito.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="闲茶杂文">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/03/IDEA下svn常用操作/" itemprop="url">IDEA下svn常用操作</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-03T20:01:00+08:00">2018-04-03</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博文/" itemprop="url" rel="index"><span itemprop="name">博文</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/03/IDEA下svn常用操作/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/04/03/IDEA下svn常用操作/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="配置相关"><a href="#配置相关" class="headerlink" title="配置相关"></a>配置相关</h3><p>在 IDEA 下配置 svn 可自行百度，有几篇 CSDN 的博文说得挺详细的。</p>
+<h3 id="代码的更新与提交"><a href="#代码的更新与提交" class="headerlink" title="代码的更新与提交"></a>代码的更新与提交</h3><ol>
+<li>首先update更新项目版本到最新</li>
+<li>然后commit，选中想要提交的更新，在comments里标注上内容，点击提交</li>
+</ol>
+<h3 id="代码回滚"><a href="#代码回滚" class="headerlink" title="代码回滚"></a>代码回滚</h3><p>若出现别人错误的删除了某个文件，或者自己想回到某一个版本（也可以是某一个文件），便可以revert</p>
+<ol>
+<li>在repository里找到要回滚的目标，右键选revert，这时会创建一个请求（类似备忘录？），填上名称和原因后提交。</li>
+<li>commit，在changelist里可以选择刚才那个revert的，提交后会提示remove这个请求。</li>
+</ol>
+<h3 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h3><p>IDEA左下角（最左下角）有个键，点一下可以把诸如 <strong>Local Changes</strong>、<strong>Repository</strong>、<strong>Incoming</strong>、<strong>Subversion Working Copies Information</strong>这样的标签页显示出来。</p>
+<hr>
+<p> 本作品采用 <a href="http://creativecommons.org/licenses/by/2.5/cn/" target="_blank" rel="external">知识共享署名 2.5 中国大陆许可协议</a> 进行许可，转载请注明来自 <a href="kirito.space">闲茶杂文</a>，并保持转载后文章内容的完整。本人保留所有版权相关权利。</p>
+<p>本文链接：kiritoxf.github.io/2018/04/03/IDEA下svn常用操作/</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="kiritoxf.github.io/2018/03/08/hexo_deploy时报错/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1371,7 +1536,7 @@ Cat(int i, String name);
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
