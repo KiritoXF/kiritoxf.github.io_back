@@ -311,6 +311,162 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="kiritoxf.github.io/2018/08/14/IOS-UITextField/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小帆">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://olzajftib.bkt.clouddn.com/Kirito.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="闲茶杂文">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/14/IOS-UITextField/" itemprop="url">IOS-UITextField</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-14T20:52:00+08:00">2018-08-14</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博文/" itemprop="url" rel="index"><span itemprop="name">博文</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/14/IOS-UITextField/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/08/14/IOS-UITextField/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">UITextField * tf = [[UITextField alloc]initWithFrame:CGRectMake(100,60,40,20)];</div><div class="line">tf.borderStyle = UITextBorderStyleRoundedRect;</div><div class="line">tf.textAlignment = NSTextAlignmentCenter;</div><div class="line">tf.placeholder = @&quot;请输入&quot;;</div><div class="line">// 失去焦点后重新获得焦点，清空之前输入的</div><div class="line">tf.clearsOnBeginEditing = YES;</div><div class="line">// 输入框开启 清除 小按钮</div><div class="line">tf.clearButtonMode = YES;</div><div class="line">// 在输入框里面的右侧加一个 UIView</div><div class="line">UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0,0,20,20)];</div><div class="line">view.backgroundColor = [UIColor grayColor];</div><div class="line">tf.rightView = view;</div><div class="line">tf.rightViewMode = UITextFiledViewModeAlways;</div><div class="line">// 密文输入</div><div class="line">tf.secureTextEntry = YES;</div><div class="line">// 自定义键盘</div><div class="line">UIView * inview = [[UIView alloc] initWithFrame:CGRectMake(0,0,[[UIScreen mainScreen]bounds].size.width,44)];</div><div class="line">inview.backgroundColor = [UIColor grayColor];</div><div class="line">// 类似输入法上面多的一行表情栏</div><div class="line">tf.inputAccessoryView = inview;</div><div class="line">// 修改键盘右下角的按键</div><div class="line">tf.returnKeyType = UIReturnKeyDone;</div><div class="line">//</div><div class="line">[tf becomeFirstResponder];</div><div class="line"></div><div class="line">[self.view addSubview:tf];</div></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/14/IOS-UITextField/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="kiritoxf.github.io/2018/08/14/iOS-页面跳转/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1744,166 +1900,6 @@ the substring from 1 to 4 of StrA is ello
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="kiritoxf.github.io/2018/04/03/IDEA下svn常用操作/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小帆">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://olzajftib.bkt.clouddn.com/Kirito.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="闲茶杂文">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/03/IDEA下svn常用操作/" itemprop="url">IDEA下svn常用操作</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-03T20:01:00+08:00">2018-04-03</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博文/" itemprop="url" rel="index"><span itemprop="name">博文</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/04/03/IDEA下svn常用操作/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/04/03/IDEA下svn常用操作/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="配置相关"><a href="#配置相关" class="headerlink" title="配置相关"></a>配置相关</h3><p>在 IDEA 下配置 svn 可自行百度，有几篇 CSDN 的博文说得挺详细的。</p>
-<h3 id="代码的更新与提交"><a href="#代码的更新与提交" class="headerlink" title="代码的更新与提交"></a>代码的更新与提交</h3><ol>
-<li>首先update更新项目版本到最新</li>
-<li>然后commit，选中想要提交的更新，在comments里标注上内容，点击提交</li>
-</ol>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/03/IDEA下svn常用操作/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1955,7 +1951,7 @@ the substring from 1 to 4 of StrA is ello
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">32</span>
+                    <span class="site-state-item-count">33</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
