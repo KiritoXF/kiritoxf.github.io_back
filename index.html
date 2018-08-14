@@ -311,6 +311,488 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="kiritoxf.github.io/2018/08/14/iOS-页面跳转/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小帆">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://olzajftib.bkt.clouddn.com/Kirito.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="闲茶杂文">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/14/iOS-页面跳转/" itemprop="url">IOS-页面跳转</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-14T20:23:00+08:00">2018-08-14</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博文/" itemprop="url" rel="index"><span itemprop="name">博文</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/14/iOS-页面跳转/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/08/14/iOS-页面跳转/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="AppDelegate-m文件里"><a href="#AppDelegate-m文件里" class="headerlink" title="AppDelegate.m文件里"></a>AppDelegate.m文件里</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">#import ViewController.h</div><div class="line"></div><div class="line">- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions &#123;</div><div class="line">	[[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];</div><div class="line">	ViewController * viewController = [[ViewController alloc] init];</div><div class="line">	UINavigationController * navigation = [[UINavigationController alloc] initWithRootViewController:viewController];</div><div class="line">	self.window.rootViewController = navigation;</div><div class="line">	return YES;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="present进入"><a href="#present进入" class="headerlink" title="present进入"></a>present进入</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">- (void)pushToNextVC &#123;</div><div class="line">	NextViewController * vc = [[NextViewController alloc] init];</div><div class="line">	[self.navigationController presentViewController : vc animated:YES completion:nil];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="dismiss返回"><a href="#dismiss返回" class="headerlink" title="dismiss返回"></a>dismiss返回</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- (void)click &#123;</div><div class="line">	[self dismissViewControllerAnimated:YES completion:nil];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<h3 id="push进入"><a href="#push进入" class="headerlink" title="push进入"></a>push进入</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">- (void)pushToNextVC &#123;</div><div class="line">	NextViewController * vc = [[NextViewController alloc] init];</div><div class="line">	[self.navigationController pushViewController : vc animated=YES];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="pop返回"><a href="#pop返回" class="headerlink" title="pop返回"></a>pop返回</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- (void)click &#123;</div><div class="line">	[self.navigationController popViewControllerAnimated:YES];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/14/iOS-页面跳转/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="kiritoxf.github.io/2018/08/14/IOS-控件自适应/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小帆">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://olzajftib.bkt.clouddn.com/Kirito.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="闲茶杂文">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/14/IOS-控件自适应/" itemprop="url">IOS-控件自适应</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-14T20:15:00+08:00">2018-08-14</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博文/" itemprop="url" rel="index"><span itemprop="name">博文</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/14/IOS-控件自适应/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/08/14/IOS-控件自适应/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="屏幕自适应"><a href="#屏幕自适应" class="headerlink" title="屏幕自适应"></a>屏幕自适应</h3><p>.m文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">#import &quot;Masonry.h&quot;</div><div class="line"></div><div class="line">- (void)viewDidLoad &#123;</div><div class="line">	[super viewDidLoad];</div><div class="line">	//...</div><div class="line">	[UIButton *button] = [[UIButton alloc] init];</div><div class="line">	[button mas_makeConstraints: ^(MASConstraintMaker *make) &#123;</div><div class="line">		// make.top.equalTo(button.mas_bottom).offset(20.0f); 对于控件上面有另一个控件时的情况</div><div class="line">		make.top.offset(100.0f);</div><div class="line">		make.left.offset(15.0f);</div><div class="line">		make.right.offset(-15.0f);</div><div class="line">		make.height.mas_equalTo(50.0f);</div><div class="line">	&#125;];</div></pre></td></tr></table></figure>
+<p>需要先导入Masonry包才行<br><a href="https://github.com/SnapKit/Masonry">Masonry Github地址</a></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/14/IOS-控件自适应/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="kiritoxf.github.io/2018/08/14/UITableView学习笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小帆">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://olzajftib.bkt.clouddn.com/Kirito.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="闲茶杂文">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/14/UITableView学习笔记/" itemprop="url">IOS-UITableView学习笔记</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-14T19:49:00+08:00">2018-08-14</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博文/" itemprop="url" rel="index"><span itemprop="name">博文</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/14/UITableView学习笔记/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/08/14/UITableView学习笔记/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>从零开始的IOS异世界之旅？？？</p>
+</blockquote>
+<h3 id="UITableView所处的位置"><a href="#UITableView所处的位置" class="headerlink" title="UITableView所处的位置"></a>UITableView所处的位置</h3><p>UIResponder -&gt;<br>UIView -&gt;<br>UIScrollView -&gt;<br>UITableView</p>
+<h3 id="UITableView必须要实现的两个方法"><a href="#UITableView必须要实现的两个方法" class="headerlink" title="UITableView必须要实现的两个方法"></a>UITableView必须要实现的两个方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;</div></pre></td></tr></table></figure>
+<p>每一个section里有多少行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath；</div></pre></td></tr></table></figure>
+<p>每一个cell的样式</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/14/UITableView学习笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="kiritoxf.github.io/2018/06/22/论文装订完成/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -408,14 +890,15 @@
 
       
         
-          
-            <p>上午装订论文，导师出差了，所以自任临时负责人收齐了几个人的论文，盖章、签字、入库一气呵成。</p>
+          <p>上午装订论文，导师出差了，所以自任临时负责人收齐了几个人的论文，盖章、签字、入库一气呵成。</p>
 <p>暂且告一段落了。</p>
-<hr>
-<p> 本作品采用 <a href="http://creativecommons.org/licenses/by/2.5/cn/" target="_blank" rel="external">知识共享署名 2.5 中国大陆许可协议</a> 进行许可，转载请注明来自 <a href="kirito.space">闲茶杂文</a>，并保持转载后文章内容的完整。本人保留所有版权相关权利。</p>
-<p>本文链接：kiritoxf.github.io/2018/06/22/论文装订完成/</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/06/22/论文装订完成/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1421,482 +1904,11 @@ the substring from 1 to 4 of StrA is ello
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="kiritoxf.github.io/2018/03/08/hexo_deploy时报错/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小帆">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://olzajftib.bkt.clouddn.com/Kirito.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="闲茶杂文">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/08/hexo_deploy时报错/" itemprop="url">hexo_deploy时报错的解决办法</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-08T16:16:00+08:00">2018-03-08</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博文/" itemprop="url" rel="index"><span itemprop="name">博文</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/03/08/hexo_deploy时报错/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/03/08/hexo_deploy时报错/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>半年多没有deploy了，今天删了些文章想重新部署，在hexo -d 的时候却报错，github仓库也没有更新。</p>
-<blockquote>
-<p> could not read username for github<br>大致是这样的</p>
-</blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/08/hexo_deploy时报错/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="kiritoxf.github.io/2017/11/22/11.22随笔/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小帆">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://olzajftib.bkt.clouddn.com/Kirito.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="闲茶杂文">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/22/11.22随笔/" itemprop="url">11月22日随笔</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-22T21:16:00+08:00">2017-11-22</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/杂谈/" itemprop="url" rel="index"><span itemprop="name">杂谈</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/11/22/11.22随笔/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/11/22/11.22随笔/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>而我现在，终于知道自己喜欢什么了。
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/22/11.22随笔/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="kiritoxf.github.io/2017/11/21/11.21随笔/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小帆">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://olzajftib.bkt.clouddn.com/Kirito.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="闲茶杂文">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/21/11.21随笔/" itemprop="url">11月21日随笔</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-21T16:58:00+08:00">2017-11-21</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/杂谈/" itemprop="url" rel="index"><span itemprop="name">杂谈</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/11/21/11.21随笔/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/11/21/11.21随笔/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>之前一直盼着能早日回到学校，去图书馆里，坐下静静地读上那么一整天的书，在冬日的凛风中也能保持着一颗温暖的心。但当我真的辞职回来了后，我却有一种说不出的孤寂空虚之感。在图书馆里看书究竟没有在地铁上来的有趣，况且还没找到想要读的书。我竟一时感到无事可做。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/21/11.21随笔/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1943,7 +1955,7 @@ the substring from 1 to 4 of StrA is ello
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">29</span>
+                    <span class="site-state-item-count">32</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1989,7 +2001,9 @@ the substring from 1 to 4 of StrA is ello
                     
                       
                     
-                    <span class="site-state-item-count">8</span>
+                      
+                    
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
